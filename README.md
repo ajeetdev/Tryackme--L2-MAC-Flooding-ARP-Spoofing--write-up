@@ -61,7 +61,7 @@
    Ans. test.txt
    Q. 10 What text is in the file?<br>
    Ans ok <br>
-    <img src="task7_Q10.png"><br>
+    <img src="task7 _Q10.png"><br>
    Q. 11 Which credentials are being used for authentication? (username:password) <br>
    Ans. admin:s3cr3t_P4zz <br>
    Q. 12 Now, stop the attack (by pressing q). What is ettercap doing in order to leave its man-in-the-middle position gracefully and undo the poisoning? <br>
@@ -78,7 +78,7 @@
    <img src="command.png"><br>
    Q.17 Which of the listed files do you want? <br>
    Ans. root.txt <br>
-   <img src="last_q.png"<br>
+   <img src="last_q.png"><br>
    <b>TASK 8 </b> <br>
    Q. 1 What is the root.txt flag? <br>
       Not solved <br>
