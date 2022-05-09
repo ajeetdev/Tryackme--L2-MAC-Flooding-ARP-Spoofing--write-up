@@ -23,9 +23,9 @@
   Ans. bob <br>
   Q. 3 What type of packets are sent? <br>
   Ans. icmp <br>
+    <img src="task4.png" alt="tcpdump.pcap"><br>
   Q. 4 What's the size of their data section? (bytes) <br>
-  Ans. 666
-      <img src="task4.png" alt="tcpdump.pcap"><br>
+  Ans. 666 <br>
    <b> TASK 5 </b><br>
   Q. 1 What kind of packets is Alice continuously sending to Bob?  <br>
   Ans. icmp <br>
