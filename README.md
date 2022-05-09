@@ -23,7 +23,7 @@
   Ans. bob <br>
   Q. 3 What type of packets are sent? <br>
   Ans. icmp <br>
-    hint for Q 3 & 4 see fig <br>
+    <b>hint</b> for Q 3 & 4 see fig <br>
     <img src="task4.png" alt="tcpdump.pcap"><br>
   Q. 4 What's the size of their data section? (bytes) <br>
   Ans. 666 <br>
@@ -31,7 +31,7 @@
   Q. 1 What kind of packets is Alice continuously sending to Bob?  <br>
   Ans. icmp <br>
   Q. 2 What's the size of their data section? (bytes) <br>
-  Ans. 1337 <br>
+  Ans. 1337 &nbsp &nbsp &nbsp (same as Q 3 & 4 in task 4)<br> 
   <b>Task 6 </b><br>
   Q.1 Can ettercap establish a MITM in between Alice and Bob? (Yay/Nay) <br>
   Ans. nay <br>
@@ -71,7 +71,7 @@
    Q. 16 What commands are being executed? Answer in the order they are being executed.<br>
    Ans. whoami, pwd, ls <br>
    Q.17 Which of the listed files do you want? <br>
-   Ans. root.txt
+   Ans. root.txt <br>
    <b>TASK 8 </b> <br>
   <!-- Q. 1 What is the root.txt flag? <br>
    Ans. <br> -->
