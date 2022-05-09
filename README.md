@@ -40,6 +40,7 @@
    <b> TASk 7</b> <br>
    Q. 1 Scan the network on eth1. Who's there? Enter their IP addresses in ascending order. <br>
    Ans. 192.168.12.10, 192.168.12.20 <br>
+    <img src="nmap_task7.png" alt="nmap 192.168.12.66/24"><br>
    Q. 2 Which machine has an open well-known port? <br>
    Ans. 192.168.12.20 <br>
    Q. 3 What is the port number? <br>
@@ -54,10 +55,12 @@
    Ans. alice <br>
    Q. 8 What's the hostname the requests are sent to? <br>
    Ans www.server.bob <br>
+   <img src="task7_Q8" alt=""><br>
    Q. 9 Which file is being requested? <br>
    Ans. test.txt
    Q. 10 What text is in the file?<br>
    Ans ok <br>
+    <img src="task7_Q10.png"><br>
    Q. 11 Which credentials are being used for authentication? (username:password) <br>
    Ans. admin:s3cr3t_P4zz <br>
    Q. 12 Now, stop the attack (by pressing q). What is ettercap doing in order to leave its man-in-the-middle position gracefully and undo the poisoning? <br>
@@ -65,15 +68,18 @@
    Q. 13 Can you access the content behind that service, now, using the obtained credentials? (Nay/Yay) <br>
    Ans. Yay <br>
    Q. 14 What is the user.txt flag? <br>
+   <b>curl -u admin:s3cr3t_p4zz http://192.168.12.20/user.txt </b><br>
    Ans. THM{wh0s_$n!ff1ng_0ur_cr3ds} <br>
    Q. 15 You should also have seen some  rather questionable kind of traffic. What kind of remote access (shell) does Alice have on the server? <br>
    Ans. reverse shell <br>
    Q. 16 What commands are being executed? Answer in the order they are being executed.<br>
    Ans. whoami, pwd, ls <br>
+   <img src="command.png"><br>
    Q.17 Which of the listed files do you want? <br>
    Ans. root.txt <br>
+   <img src="root.png"<br>
    <b>TASK 8 </b> <br>
-  <!-- Q. 1 What is the root.txt flag? <br>
-   Ans. <br> -->
+   Q. 1 What is the root.txt flag? <br>
+      Not solved <br>
    
    
