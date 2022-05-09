@@ -58,8 +58,9 @@
    Ans www.server.bob <br>
    <img src="task7_Q8.png" alt=""><br>
    Q. 9 Which file is being requested? <br>
-   Ans. test.txt
+   Ans. test.txt <br>
    Q. 10 What text is in the file?<br>
+   <b>curl -u admin:s3cr3t_p4zz http://192.168.12.20/test.txt</b><br>
    Ans ok <br>
     <img src="task7 _Q10.png"><br>
    Q. 11 Which credentials are being used for authentication? (username:password) <br>
@@ -82,5 +83,16 @@
    <b>TASK 8 </b> <br>
    Q. 1 What is the root.txt flag? <br>
       Not solved <br>
+      
+      
+      
+      
+      
+      
+      Thank you <br>
+      this is my first writeup, if i made any mistake foregive me.<br>
+      if you have any questin connect with me on LinkedIn.
+      <a href="https://www.linkedin.com/in/ajeet-kumar-404583222/">connect</a>
+      
    
    
