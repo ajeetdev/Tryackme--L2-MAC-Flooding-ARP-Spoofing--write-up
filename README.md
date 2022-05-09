@@ -52,6 +52,8 @@
    Ans. Nay <br>
    Q. 6 Now launch the same ARP spoofing attack as in the previous task. Can you see some interesting traffic, now? (Nay/Yay) <br>
    Ans. Yay <br>
+     To launch arp attack<b>ettercap -T -i eth1 -M arp</b><br>
+     ettercap -T -i eth1 -M arp > myarp.txt  (read carefully Q 7,89,11 Ans found in myarp.txt)<br>
    Q. 7 Who is using that service? <br>
    Ans. alice <br>
    Q. 8 What's the hostname the requests are sent to? <br>
@@ -91,8 +93,8 @@
       
       Thank you <br>
       this is my first writeup, if i made any mistake foregive me.<br>
-      if you have any questin connect with me on LinkedIn.
-      <a href="https://www.linkedin.com/in/ajeet-kumar-404583222/">connect</a>
+      if you have any questin connect with me on LinkedIn.(use tryhackme to get my LinkedIn Id)
       
+      Ajeet Kumar
    
    
