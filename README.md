@@ -23,6 +23,7 @@
   Ans. bob <br>
   Q. 3 What type of packets are sent? <br>
   Ans. icmp <br>
+    hint for Q 3 & 4 see fig <br>
     <img src="task4.png" alt="tcpdump.pcap"><br>
   Q. 4 What's the size of their data section? (bytes) <br>
   Ans. 666 <br>
