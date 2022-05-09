@@ -52,7 +52,7 @@
    Ans. Nay <br>
    Q. 6 Now launch the same ARP spoofing attack as in the previous task. Can you see some interesting traffic, now? (Nay/Yay) <br>
    Ans. Yay <br>
-     To launch arp attack<b>ettercap -T -i eth1 -M arp</b><br>
+     To launch arp attack<b> ettercap -T -i eth1 -M arp</b><br>
      ettercap -T -i eth1 -M arp > myarp.txt  (read carefully Q 7,89,11 Ans found in myarp.txt)<br>
    Q. 7 Who is using that service? <br>
    Ans. alice <br>
