@@ -1,7 +1,7 @@
 # L2-MAC-Flooding-ARP-Spoofing
  <b> Tryhackme  L2 MAC Flooding &amp; ARP Spoofing writeup </b>
   
- <b> TASK 2 <b> <br>
+ <b> TASK 2 </b> <br>
   Q.1    Now, can you (re)gain access? (Yay/Nay).<br>
   Ans.   Yea
   <br>
