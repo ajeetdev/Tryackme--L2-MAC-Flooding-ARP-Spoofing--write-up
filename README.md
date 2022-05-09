@@ -73,7 +73,7 @@
    Ans. Yay <br>
    Q. 14 What is the user.txt flag? <br>
    <b>curl -u admin:s3cr3t_p4zz http://192.168.12.20/user.txt </b><br>
-   Ans. THM{wh0s_$n!ff1ng_0ur_cr3ds} <br>
+   Ans. THM{..........}  <br>
    Q. 15 You should also have seen some  rather questionable kind of traffic. What kind of remote access (shell) does Alice have on the server? <br>
    Ans. reverse shell <br>
    Q. 16 What commands are being executed? Answer in the order they are being executed.<br>
