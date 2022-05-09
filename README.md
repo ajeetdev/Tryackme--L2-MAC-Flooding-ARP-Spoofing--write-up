@@ -39,6 +39,7 @@
   Ans. yay <br>
    <b> TASk 7</b> <br>
    Q. 1 Scan the network on eth1. Who's there? Enter their IP addresses in ascending order. <br>
+   <b>nmap 192.168.12.0/24</b><br>
    Ans. 192.168.12.10, 192.168.12.20 <br>
     <img src="nmap_task7.png" alt="nmap 192.168.12.66/24"><br>
    Q. 2 Which machine has an open well-known port? <br>
@@ -55,7 +56,7 @@
    Ans. alice <br>
    Q. 8 What's the hostname the requests are sent to? <br>
    Ans www.server.bob <br>
-   <img src="task7_Q8" alt=""><br>
+   <img src="task7_Q8.png" alt=""><br>
    Q. 9 Which file is being requested? <br>
    Ans. test.txt
    Q. 10 What text is in the file?<br>
@@ -77,7 +78,7 @@
    <img src="command.png"><br>
    Q.17 Which of the listed files do you want? <br>
    Ans. root.txt <br>
-   <img src="root.png"<br>
+   <img src="last_q.png"<br>
    <b>TASK 8 </b> <br>
    Q. 1 What is the root.txt flag? <br>
       Not solved <br>
