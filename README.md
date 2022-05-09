@@ -84,7 +84,7 @@
    <img src="last_q.png"><br>
    <b>TASK 8 </b> <br>
    Q. 1 What is the root.txt flag? <br>
-      Not solved <br>
+   Ans.   <br>
       
       
       
@@ -92,7 +92,7 @@
       
       
       Thank you <br>
-      this is my first writeup, if i made any mistake foregive me.<br>
+      this is my first writeup, if i made any mistake foregive me.
       if you have any questin connect with me on LinkedIn.(use tryhackme to get my LinkedIn Id)
       
       Ajeet Kumar
