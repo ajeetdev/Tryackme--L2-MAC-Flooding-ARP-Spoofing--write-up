@@ -31,7 +31,7 @@
   Q. 1 What kind of packets is Alice continuously sending to Bob?  <br>
   Ans. icmp <br>
   Q. 2 What's the size of their data section? (bytes) <br>
-  Ans. 1337 &nbsp &nbsp &nbsp (same as Q 3 & 4 in task 4)<br> 
+  Ans. 1337           (same as Q 3 & 4 in task 4)<br> 
   <b>Task 6 </b><br>
   Q.1 Can ettercap establish a MITM in between Alice and Bob? (Yay/Nay) <br>
   Ans. nay <br>
