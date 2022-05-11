@@ -11,6 +11,7 @@
   Q. 1 What is your IP address? <br>
   <b>  ip address show eth1 </b><br>
   Ans. 192.168.12.66 <br>
+  <img src="nmap_task.png"><br>
   Q. 2 What's the network's CIDR prefix? <br>
   Ans. /24  <br>
   Q. 4 How many other live hosts are there? <br>
