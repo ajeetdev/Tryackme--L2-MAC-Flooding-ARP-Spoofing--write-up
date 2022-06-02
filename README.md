@@ -125,7 +125,7 @@
       
       
       
-      Thank you <br>
+      Thank you 
       this is my first writeup, if i made any mistake foregive me.
       if you have any questions connect with me on LinkedIn.(use tryhackme to get my LinkedIn Id).
       
