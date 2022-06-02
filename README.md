@@ -116,7 +116,7 @@
   A few seconds after executing this command, you should see  "Connection received on 192.168.12.20 " on netcat listerer<br>
   step 6. on netcat listener type "fg" to foreground listener<br>
   
-  Enjoy revershell
+  Enjoy reverse shell
   
   <img src="root_flag.png"><br>
   
